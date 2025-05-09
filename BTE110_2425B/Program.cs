@@ -677,39 +677,174 @@ namespace BTE110_2425B
             //    Console.WriteLine();
             //}
 
-            int[] notlar;
+            //int[] notlar;
 
-            Console.Write("Kaç tane not gireceksiniz: ");
+            //Console.Write("Kaç tane not gireceksiniz: ");
 
-            string diziBoyutStr = Console.ReadLine();
+            //string diziBoyutStr = Console.ReadLine();
 
-            int diziBoyutInt = Convert.ToInt32(diziBoyutStr);
+            //int diziBoyutInt = Convert.ToInt32(diziBoyutStr);
 
-            notlar = new int[diziBoyutInt];
+            //notlar = new int[diziBoyutInt];
 
-            for (int i = 0; i < notlar.Length; i++)
+            //for (int i = 0; i < notlar.Length; i++)
+            //{
+            //    Console.Write($"{i + 1}. Notu gir: ");
+            //    string notStr = Console.ReadLine();
+            //    notlar[i] = Convert.ToInt32(notStr);
+            //}
+
+            //int toplamNot = 0;
+
+            //for (int i = 0; i < notlar.Length; i++)
+            //{
+            //    toplamNot += notlar[i];
+            //}
+
+            //double ortalama = (double)toplamNot / notlar.Length;
+
+            //Console.WriteLine("#######################");
+
+            //Console.WriteLine($"Notların Toplamı: {toplamNot}");
+            //Console.WriteLine($"Notların ortalaması: {ortalama}");
+
+
+
+            //08.05.2025
+            //Konu: Metotlar
+
+            //Parametre alıyor mu?
+            //Geriye değer dönüyor mu?
+
+            //1-Parametre almıyor, geri değer dönmüyor
+            //2-Parametre almıyor, geri değer dönüyor
+            //3-Parametre alıyor, geri değer dönmüyor
+            //4-Parametre alıyor, geri değer dönüyor
+
+            //string a = Merhaba1();
+
+            //Console.WriteLine(a.ToUpper() + " " + "NASILSIN?");
+
+            //Merhaba3("Merhaba Dünya");
+
+            //string x = "Merhaba Dünya";
+
+            //Merhaba3(x);
+
+            //string y = Merhaba4("Merhaba Dünya");
+
+            //Console.WriteLine(y);
+
+            //Console.Write("1. sayıyı giriniz: ");
+            //int sayi1 = StringToInt(Console.ReadLine());
+
+            //Console.Write("2. sayıyı giriniz: ");
+            //int sayi2 = StringToInt(Console.ReadLine());
+
+            //int toplam = sayi1 + sayi2;
+
+            //Console.WriteLine($"Toplam: {toplam}");
+
+            //string a = "Merhaba Dünya";
+
+            //Console.WriteLine(a.ToUpper());
+            //Console.WriteLine(a.Count());
+            //Console.WriteLine(a.Substring(2, 2));
+            //Console.WriteLine(a.Split());
+
+            //string b = "Ankara:İstanbul:İzmir:Bursa";
+
+            //string[] c = Parcala(b, ':');
+
+            //string[] d = b.Split(':');
+
+            //Merhaba5();
+
+        }
+
+        static void a()
+        {
+
+
+        }
+        static void a(int a) { 
+        
+        
+        }
+        static void a(string a)
+        {
+
+
+        }
+
+        //Sonsuz döngü
+        //static void Merhaba5()
+        //{
+        //    Merhaba5();
+        //}
+
+        static string[] Parcala(string a, char b) {
+
+            int karakterSayisi = 0;
+
+            for (int i = 0; i < a.Length; i++)
             {
-                Console.Write($"{i + 1}. Notu gir: ");
-                string notStr = Console.ReadLine();
-                notlar[i] = Convert.ToInt32(notStr);
+                if (a[i] == b)
+                {
+                    karakterSayisi++;
+                }
             }
 
-            int toplamNot = 0;
+            string[] sonuc = new string[karakterSayisi + 1];
 
-            for (int i = 0; i < notlar.Length; i++)
+            string eleman = "";
+
+            int indeks = 0;
+
+            for (int i = 0; i < a.Length; i++)
             {
-                toplamNot += notlar[i];
+                if (a[i] == b)
+                {
+                    sonuc[indeks++] = eleman;
+                    eleman = "";
+                }
+                else
+                {
+                    eleman += a[i];
+                }
             }
 
-            double ortalama = (double)toplamNot / notlar.Length;
+            sonuc[indeks] = eleman;
 
-            Console.WriteLine("#######################");
+            return sonuc;
+        }
 
-            Console.WriteLine($"Notların Toplamı: {toplamNot}");
-            Console.WriteLine($"Notların ortalaması: {ortalama}");
+        static void Merhaba1()
+        {
+            Console.WriteLine("Merhaba Dünya");
+        }
 
+        static string Merhaba2()
+        {
+            string a = "Merhaba Dünya";
 
+            return a;
+        }
 
+        static void Merhaba3(string a)
+        {
+            Console.WriteLine(a);
+        }
+
+        static string Merhaba4(string a)
+        {
+            return a.ToUpper();
+        }
+        static int StringToInt(string a)
+        {
+            int b = Convert.ToInt32(a);
+
+            return b;
         }
 
     }
