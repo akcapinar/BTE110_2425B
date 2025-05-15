@@ -760,92 +760,196 @@ namespace BTE110_2425B
 
             //Merhaba5();
 
+            //Console
+            //Math.
+
+            //Random rnd = new Random();
+            //Random rnd1 = new Random();
+            //Random rnd2 = new Random();
+
+            //Console
+
+            //StreamWriter sw = new StreamWriter("a.abc");
+
+            //    sw.AutoFlush = true;
+
+            //    sw.WriteLine("Merhaba Dünya");
+            //    sw.WriteLine("Merhaba Dünya");
+            //    sw.WriteLine("Merhaba Dünya");
+            //    sw.WriteLine("Merhaba Dünya");
+            //    sw.WriteLine("Merhaba Dünya");
+
+            ////sw.Flush();
+
+            //sw.Close();
+
+
+            //StreamReader sr = new StreamReader("a.abc");
+
+            //var a = sr.ReadToEnd();
+            //var a = sr.ReadLine();
+            //var b = sr.ReadLine();
+            //var c = sr.ReadLine();
+            //var d = sr.ReadLine();
+
+            //sr.Peek();
+            //sr.Peek();
+            //var a = (char)sr.Peek();
+            //var b = (char)sr.Peek();
+
+            //var a = (char)sr.Read();
+            //var b = (char)sr.Read();
+            //var c = (char)sr.Read();
+            //var d = (char)sr.Read();
+            //var e = (char)sr.Read();
+            //var f = (char)sr.Read();
+            //var g = (char)sr.Read();
+
+            //sr.Close();
+
+            //using (StreamReader sr = new StreamReader("a.abc"))
+            //{
+            //    while (sr.EndOfStream == false)
+            //    {
+            //        var a = sr.Read();
+            //        //var b = sr.ReadLine();
+            //    }
+
+            //    while (sr.Peek() != -1)
+            //    {
+            //        var a = sr.Read();
+            //        //var b = sr.ReadLine();
+            //    }
+
+            //    var a = sr.Read();
+            //    var b = sr.Read();
+            //    var c = sr.Read();
+            //    var d = sr.Read();
+            //    var e = sr.Read();
+            //    Dispose();
+            //}
+
+            //using (StreamWriter sw = new StreamWriter("a.xyz", false))
+            //{
+            //    Random rnd = new Random();
+
+            //    for (int i = 0; i < 100; i++)
+            //    {
+            //        sw.WriteLine(rnd.Next(1111, 9999));
+            //    }        
+            //}
+
+            using (StreamReader sr = new StreamReader("a.xyz"))
+            {
+                //while (sr.EndOfStream == false)
+                //while (!sr.EndOfStream)
+                //{
+                //    var a = sr.ReadLine();
+                //    Console.WriteLine(a);
+                //    Task.Delay(1000).Wait();
+                //}
+
+                //while (!sr.EndOfStream)
+                //{
+                //    var a = sr.Read();
+                //    if (a == 13 || a == 10)
+                //    {
+                //        continue;
+                //    }
+                //    else
+                //    {
+                //        Console.Write((char)a);
+                //        Task.Delay(1000).Wait();
+                //    }
+                //}
+            }
+
         }
 
-        static void a()
-        {
-
-
-        }
-        static void a(int a) { 
-        
-        
-        }
-        static void a(string a)
-        {
-
-
-        }
-
-        //Sonsuz döngü
-        //static void Merhaba5()
+        //static void a()
         //{
-        //    Merhaba5();
+
+
+        //}
+        //static void a(int a) { 
+        
+        
+        //}
+        //static void a(string a)
+        //{
+
+
         //}
 
-        static string[] Parcala(string a, char b) {
+        ////Sonsuz döngü
+        ////static void Merhaba5()
+        ////{
+        ////    Merhaba5();
+        ////}
 
-            int karakterSayisi = 0;
+        //static string[] Parcala(string a, char b) {
 
-            for (int i = 0; i < a.Length; i++)
-            {
-                if (a[i] == b)
-                {
-                    karakterSayisi++;
-                }
-            }
+        //    int karakterSayisi = 0;
 
-            string[] sonuc = new string[karakterSayisi + 1];
+        //    for (int i = 0; i < a.Length; i++)
+        //    {
+        //        if (a[i] == b)
+        //        {
+        //            karakterSayisi++;
+        //        }
+        //    }
 
-            string eleman = "";
+        //    string[] sonuc = new string[karakterSayisi + 1];
 
-            int indeks = 0;
+        //    string eleman = "";
 
-            for (int i = 0; i < a.Length; i++)
-            {
-                if (a[i] == b)
-                {
-                    sonuc[indeks++] = eleman;
-                    eleman = "";
-                }
-                else
-                {
-                    eleman += a[i];
-                }
-            }
+        //    int indeks = 0;
 
-            sonuc[indeks] = eleman;
+        //    for (int i = 0; i < a.Length; i++)
+        //    {
+        //        if (a[i] == b)
+        //        {
+        //            sonuc[indeks++] = eleman;
+        //            eleman = "";
+        //        }
+        //        else
+        //        {
+        //            eleman += a[i];
+        //        }
+        //    }
 
-            return sonuc;
-        }
+        //    sonuc[indeks] = eleman;
 
-        static void Merhaba1()
-        {
-            Console.WriteLine("Merhaba Dünya");
-        }
+        //    return sonuc;
+        //}
 
-        static string Merhaba2()
-        {
-            string a = "Merhaba Dünya";
+        //static void Merhaba1()
+        //{
+        //    Console.WriteLine("Merhaba Dünya");
+        //}
 
-            return a;
-        }
+        //static string Merhaba2()
+        //{
+        //    string a = "Merhaba Dünya";
 
-        static void Merhaba3(string a)
-        {
-            Console.WriteLine(a);
-        }
+        //    return a;
+        //}
 
-        static string Merhaba4(string a)
-        {
-            return a.ToUpper();
-        }
-        static int StringToInt(string a)
-        {
-            int b = Convert.ToInt32(a);
+        //static void Merhaba3(string a)
+        //{
+        //    Console.WriteLine(a);
+        //}
 
-            return b;
-        }
+        //static string Merhaba4(string a)
+        //{
+        //    return a.ToUpper();
+        //}
+        //static int StringToInt(string a)
+        //{
+        //    int b = Convert.ToInt32(a);
+
+        //    return b;
+        //}
 
     }
 }
