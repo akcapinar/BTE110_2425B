@@ -839,32 +839,107 @@ namespace BTE110_2425B
             //    }        
             //}
 
-            using (StreamReader sr = new StreamReader("a.xyz"))
-            {
-                //while (sr.EndOfStream == false)
-                //while (!sr.EndOfStream)
-                //{
-                //    var a = sr.ReadLine();
-                //    Console.WriteLine(a);
-                //    Task.Delay(1000).Wait();
-                //}
+            //using (StreamReader sr = new StreamReader("a.xyz"))
+            //{
+            //while (sr.EndOfStream == false)
+            //while (!sr.EndOfStream)
+            //{
+            //    var a = sr.ReadLine();
+            //    Console.WriteLine(a);
+            //    Task.Delay(1000).Wait();
+            //}
 
-                //while (!sr.EndOfStream)
-                //{
-                //    var a = sr.Read();
-                //    if (a == 13 || a == 10)
-                //    {
-                //        continue;
-                //    }
-                //    else
-                //    {
-                //        Console.Write((char)a);
-                //        Task.Delay(1000).Wait();
-                //    }
-                //}
+            //while (!sr.EndOfStream)
+            //{
+            //    var a = sr.Read();
+            //    if (a == 13 || a == 10)
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.Write((char)a);
+            //        Task.Delay(1000).Wait();
+            //    }
+            //}
+            //}
+
+            //22.05.2025
+
+            //string a = Directory.GetCurrentDirectory();
+
+            //string[] b = Directory.GetFiles(a);
+
+            //for (int i = 0; i < b.Length; i++)
+            //{
+            //    Console.WriteLine(b[i]);
+            //}
+
+            //Console.WriteLine(a);
+
+            //using (StreamWriter sw = new StreamWriter("C:\\Users\\Gokhan\\source\\repos\\BTE110_2425B\\BTE110_2425B\\bin\\Debug\\net9.0\\"))
+            //using (StreamWriter sw = new StreamWriter(@"C:\Users\Gokhan\source\repos\BTE110_2425B\BTE110_2425B\bin\Debug\net9.0\a.xyz"))
+            //{
+
+            //}
+
+            //Hata yönetimi
+
+            //1 - Yazım (Syntax) Hataları
+            //2 - Derleme (Compile) Hataları
+            //3 - Çalışma Zamanı (Runtime) Hataları  
+            //4 - Mantıksal Hatalar
+            //5 - Hata Yönetimi
+            //6 - Hata Ayıklama (Debugging)
+
+            //int safsafds;
+
+            //safsafds = 123;
+
+            //string a = Console.ReadLine();
+
+            //byte b = Convert.ToByte(a);
+
+            //int i = 1;
+
+            //while (i <= 10)
+            //{
+            //    Console.WriteLine($"{i++} - Merhaba Dünya");
+            //}
+
+
+            try
+            {
+                string a = Console.ReadLine();
+
+                byte b = Convert.ToByte(a);
+
+                //Hata verme ihtimali olan kodları buraya yaz
+            }
+            catch (Exception ex)
+            {
+
+                if (ex is FormatException)
+                {
+                    Console.WriteLine("Format error: Please enter a valid number.");
+                }
+                else if (ex is OverflowException)
+                {
+                    Console.WriteLine("Overflow error: The number is too large or too small for a byte.");
+                }
+                else
+                {
+                    Console.WriteLine("An unexpected error occurred: " + ex.Message);
+                }
+
+                //throw;
+            }
+            finally { 
+            
             }
 
         }
+    }
 
         //static void a()
         //{
@@ -872,8 +947,8 @@ namespace BTE110_2425B
 
         //}
         //static void a(int a) { 
-        
-        
+
+
         //}
         //static void a(string a)
         //{
@@ -952,4 +1027,4 @@ namespace BTE110_2425B
         //}
 
     }
-}
+
